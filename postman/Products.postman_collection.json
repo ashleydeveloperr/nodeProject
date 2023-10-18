@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "45849d38-d2ef-4db4-85ce-3f7781e2382d",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4444/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4444",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Latop Dell\",\r\n    \"category\": \"latops\",\r\n    \"price\": 199.99,\r\n    \"imgUrl\": \"https://1700digital.com/producto/laptop-dell-inspiron-3511-intel-core-i5-1135g7-8gb-ssd-256gb-15-6-fhd-ecuador/\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4444/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4444",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": []
+		},
+		{
+			"name": "auth",
+			"item": []
+		}
+	]
+}
